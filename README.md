@@ -3,9 +3,11 @@
 Two mini-projects: a text translation tool (Task 1) and an FAQ-answering chatbot (Task 2).
 
 ## Contents
-- [Repository Structure](#repository-structure)
-- [Task 1: Language Translation Tool](#task-1-language-translation-tool)
-- [Task 2: FAQ Chatbot](#task-2-faq-chatbot)
+- [Language Translation Tool \& FAQ Chatbot](#language-translation-tool--faq-chatbot)
+  - [Contents](#contents)
+  - [Repository Structure](#repository-structure)
+  - [Task 1: Language Translation Tool](#task-1-language-translation-tool)
+  - [Task 2: FAQ Chatbot](#task-2-faq-chatbot)
 
 ---
 
@@ -57,7 +59,7 @@ streamlit run translator.py
 A chatbot that answers free-text questions by matching them to the closest FAQ using NLP preprocessing and cosine similarity.
 
 **How it works**
-1. **Collect FAQs** — loads question/answer pairs from a CSV. Columns are auto-detected: `instruction`/`response` (the schema used by the [Bitext Gen AI Chatbot Customer Support Dataset](https://www.kaggle.com/datasets/bitext/bitext-gen-ai-chatbot-customer-support-dataset)) or generic `question`/`answer`.
+1. **Collect FAQs** — loads question/answer pairs from a CSV. Columns are auto-detected: `instruction`/`response` basically the generic `question`/`answer` schema.
 2. **Preprocess** — NLTK cleans each question: lowercasing, punctuation removal, tokenization, stopword removal, and POS-aware lemmatization (each word's part of speech is tagged first, so e.g. "shipping" and "ship" reduce to the same form instead of being treated as unrelated words).
 3. **Match** — FAQ questions are vectorized with TF-IDF; a user's question is compared against all of them using cosine similarity, and the closest match is selected.
 4. **Respond** — returns the paired answer, or a "not confident, please rephrase" message if nothing clears a similarity threshold.
