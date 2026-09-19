@@ -1,9 +1,0 @@
-flags,instruction,category,intent,response
-B,How can I track my order,ORDER,track_order,"You can track your order by logging into your account and visiting the Order History page, where you'll find real-time tracking information."
-B,I want to cancel my order,ORDER,cancel_order,"To cancel your order, go to Order History, select the order, and click Cancel Order. Cancellations are only possible before the item ships."
-B,What is your refund policy,REFUND,get_refund,"We offer a full refund within 30 days of purchase as long as the item is unused and in its original packaging. Refunds are processed within 5-7 business days."
-B,How do I reset my password,ACCOUNT,reset_password,"Click 'Forgot Password' on the login page, enter your email, and follow the reset link we send you. The link expires after 24 hours."
-B,Do you ship internationally,SHIPPING,delivery_options,"Yes, we ship to over 40 countries. International shipping costs and delivery times are shown at checkout based on your address."
-B,How can I contact customer support,CONTACT,contact_customer_service,"You can reach our support team via live chat on our website, by emailing support@example.com, or by calling our toll-free number 24/7."
-B,Can I change my shipping address after ordering,ORDER,change_shipping_address,"You can update your shipping address within 1 hour of placing the order from the Order History page, as long as it hasn't shipped yet."
-B,What payment methods do you accept,PAYMENT,payment_methods,"We accept all major credit and debit cards, PayPal, and Apple Pay. Some regions also support cash on delivery."
